@@ -3,6 +3,8 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
+    var userName = prompt("What is your name?");
+
     var userChoice = prompt("Do you choose rock, paper or scissors?");
 
     var computerChoice = Math.random();
@@ -15,7 +17,6 @@
         computerChoice = "scissors";
     }
 
-    var compare = function(userChoice, computerChoice) {
         if (userChoice  === computerChoice) {
               window.alert("The result is a tie!");
           } else if(userChoice ==="rock") {
@@ -40,12 +41,11 @@
                   window.alert("scissors wins");
               }
           }
-      };
     </script>
   </head>
   <body>
     <div class="wrapper">
-      <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
+      <button class="button" onclick="location.reload()">LETS PLAY RPS!</button> >
     </div>
   </body>
 
